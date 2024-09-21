@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({
-    Key? key,
+    super.key,
     this.buttonText,
     this.backgroundColor = Colors.transparent, 
     this.textColor = Colors.black, 
-  }) : super(key: key);
+  });
 
   final String? buttonText;
   final Color backgroundColor;

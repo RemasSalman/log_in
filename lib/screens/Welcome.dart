@@ -4,7 +4,7 @@ import 'package:my_login_page/widgets/CustomButton.dart';
 import 'package:my_login_page/widgets/customScaffold.dart';
 
 class Welcome extends StatelessWidget {
-  const Welcome({Key? key}) : super(key: key);
+  const Welcome({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +58,7 @@ class Welcome extends StatelessWidget {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Login()),
+                          MaterialPageRoute(builder: (context) => const Login()),
                         );
                       },
                       child: const CustomButton(

@@ -3,7 +3,7 @@ import 'package:icons_plus/icons_plus.dart';
 import 'package:my_login_page/widgets/customScaffold.dart';
 
 class Login extends StatefulWidget {
-  const Login({Key? key}) : super(key: key);
+  const Login({super.key});
 
   @override
   _LoginState createState() => _LoginState();
@@ -99,7 +99,7 @@ class _LoginState extends State<Login> {
                             ),
                           ),
                         ),
-                        SizedBox(height: 50),
+                        const SizedBox(height: 50),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
@@ -148,7 +148,7 @@ class _LoginState extends State<Login> {
                               // Add your login functionality here
                             },
                             style: ButtonStyle(
-                              backgroundColor: MaterialStateProperty.all<Color>(
+                              backgroundColor: WidgetStateProperty.all<Color>(
                                   Colors.black), // Set button color to black
                             ),
                             child: const Row(
@@ -164,7 +164,7 @@ class _LoginState extends State<Login> {
                             ),
                           ),
                         ),
-                        SizedBox(height: 50),
+                        const SizedBox(height: 50),
                         const Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
